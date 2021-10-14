@@ -1,0 +1,11 @@
+{
+  "name": "peasant-binary",
+  "version": "1.0.0",
+  "description": "A small demonstration of peasant binary math.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grayson Hansard",
+  "license": "MIT"
+}

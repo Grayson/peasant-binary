@@ -24,4 +24,5 @@ a {
 .explanation {
 	width: 20em;
 	text-align: justify;
+	color: lightgray;
 }

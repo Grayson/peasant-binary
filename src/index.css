@@ -1,0 +1,18 @@
+body {
+	background: #333;
+	color: #fff;
+}
+
+dd {
+	display: inline;
+}
+
+dd:after {
+	content: '';
+	display: block;
+}
+
+dt {
+	display: inline-block;
+	width: 5em;
+}

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A small demonstration of peasant binary math.",
   "scripts": {
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "parcel build src/index.html --public-url ./ && rm -r docs && mv dist docs",
     "start": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

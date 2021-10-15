@@ -16,3 +16,12 @@ dt {
 	display: inline-block;
 	width: 5em;
 }
+
+a {
+	color: lightblue;
+}
+
+.explanation {
+	width: 20em;
+	text-align: justify;
+}

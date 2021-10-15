@@ -2,8 +2,8 @@
   "name": "peasant-binary",
   "version": "1.0.0",
   "description": "A small demonstration of peasant binary math.",
-  "main": "index.js",
   "scripts": {
+    "build": "parcel build src/index.html",
     "start": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

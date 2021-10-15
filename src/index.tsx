@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import BinaryLine from './BinaryLine';
 import BinaryView from './BinaryView';
 
 interface BinaryCalculationChain {
@@ -35,7 +36,6 @@ function onInputChange(event: React.ChangeEvent<HTMLInputElement>) {
 	const calculation = calculateNextValue(input);
 	const collection = collect(calculation);
 	update({ ...appState, binary: collection });
-	console.log(collection);
 }
 
 interface ApplicationState {
@@ -47,10 +47,13 @@ let appState: ApplicationState = {
 };
 
 function Application({ binary }: ApplicationState): JSX.Element {
+	const bits = binary.map(x => x.isOne);
+	bits.reverse();
 	return <>
 		<h1>Peasant Binary</h1>
 		<input type="text" onChange={onInputChange} />
 		<BinaryView binary={ binary } />
+		<BinaryLine bits={bits} />
 	</>;
 }
 
